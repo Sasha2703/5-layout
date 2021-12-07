@@ -1,0 +1,84 @@
+.introducing {
+
+  &_image{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__title {
+    @include title700(14px, 48px);
+    margin-bottom: 5px;
+    padding-top: 51px;
+    letter-spacing: 0.08em;
+
+  }
+
+  &_bigtitle {
+
+    font-size: 48px;
+    line-height: 46px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #ffffff;
+    font-size: 3.03rem;
+  }
+
+  &_text {
+    @include maintext(18px, 26px);
+    max-width: 480px;
+    padding-top: 16px;
+    margin-bottom: 61px;
+    line-height: 25px;
+    font-size: 1.1rem;
+    span{
+      padding-left:2px;
+    }
+
+
+  }
+
+  &_btn {
+    width: 156px;
+    height: 50px;
+    background-color: #008ed6;
+    box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+    padding-block: 0;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 6px;
+
+
+    &:hover {
+      background-color: #008ed6;
+      color: #ffffff;
+    }
+  }
+
+  &_btn:last-child {
+    background-color: transparent;
+    padding-top: 14px;
+    font-size: 0.86rem;
+
+  }
+
+  img {
+    padding-top: 24px;
+
+
+  }
+
+  @media (max-width: 950px) {
+      &_bigtitle {
+        font-size: 36px;
+      }
+      &_btn {
+        width: 160px;
+        height: 50px;
+        margin-bottom: 30px;
+      }
+      }
+}
